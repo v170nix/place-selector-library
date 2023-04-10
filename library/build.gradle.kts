@@ -80,8 +80,8 @@ dependencies {
     androidTestImplementation ("androidx.test.espresso:espresso-core:3.5.1")
 }
 
-//group = "net.arwix.placeselector"
-//version = "1.0.0-alpha01"
+group = "net.arwix.placeselector"
+version = "1.0.0-alpha03"
 
 
 // https://stackoverflow.com/questions/26874498/publish-an-android-library-to-maven-with-aar-and-sources-jar
@@ -91,9 +91,7 @@ afterEvaluate {
         publications {
             create<MavenPublication>("ReleasePublication") {
                 from(components["release"])
-                groupId ="com.github.v170nix"
                 artifactId = "place-selector"
-                version = "1.0.0-alpha02"
             }
         }
     }
